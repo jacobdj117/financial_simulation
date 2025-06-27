@@ -41,10 +41,6 @@ def run_sim(distributions):
         if run_sim.mortgage_done: mortgage = mortgage + distributions[1]
         if run_sim.roof_done: mortgage = mortgage + distributions[2]
 
-        if mortgage > 2000:
-            print("err")
-            exit()
-
         do_savings(distributions[0])
         if not run_sim.mortgage_done: run_sim.mortgage_done = do_mortgage(distributions[1], i)
         if not run_sim.roof_done: run_sim.roof_done = do_roof(distributions[2], i)
