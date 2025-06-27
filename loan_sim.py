@@ -80,3 +80,4 @@ for i in range(0, TOTAL_DISTRIBUTION, 10):
             "\n"
         )
         initialize()
+data_out.close()
